@@ -1,0 +1,15 @@
+// Import express
+const express = require('express');
+
+// Import download controller
+const downloadControllers = require('../controllers/download-controller.js');
+
+
+// Create express router
+const router = express.Router();
+
+// Create route between downloadControllers and '/' endpoint
+router.get('/', downloadControllers.downloadAsset);
+
+// Export router
+module.exports = router;

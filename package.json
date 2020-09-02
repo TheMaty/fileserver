@@ -1,0 +1,53 @@
+{
+  "name": "react-express-app",
+  "version": "1.0.0",
+  "private": true,
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://localhost:4000",
+  "scripts": {
+    "build": "node ./buildScript",
+    "start-server": "cross-env NODE_ENV=development nodemon server/server.js --watch server/*",
+    "start-front": "react-scripts start",
+    "build-front": "react-scripts build",
+    "eject": "react-scripts eject",
+    "test": "react-scripts test"
+  },
+  "dependencies": {
+    "body-parser": "1.19.0",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.5",
+    "cors": "2.8.5",
+    "express": "4.17.1",
+    "helmet": "^3.22.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "4.2.4",
+    "@testing-library/react": "9.4.0",
+    "@testing-library/user-event": "7.2.1",
+    "@types/jest": "24.9.1",
+    "@types/node": "13.9.5",
+    "@types/react": "16.9.26",
+    "@types/react-dom": "16.9.5",
+    "concurrently": "5.1.0",
+    "cross-env": "^7.0.2",
+    "nodemon": "2.0.2",
+    "react-scripts": "3.4.1",
+    "typescript": "~3.8.3"
+  }
+}

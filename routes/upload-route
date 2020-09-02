@@ -1,0 +1,16 @@
+console.log('************** upload route **************');
+// Import express
+const express = require('express');
+
+// Import download controller
+const uploadControllers = require('../controllers/upload-controller.js');
+
+
+// Create express router
+const router = express.Router();
+
+// Create route between uploadControllers and '/upload' endpoint
+router.get('/upload', uploadControllers.uploadAsset);
+
+// Export router
+module.exports = router;
